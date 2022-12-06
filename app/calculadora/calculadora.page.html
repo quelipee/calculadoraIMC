@@ -1,0 +1,97 @@
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-label>
+              <p>Idade</p>
+            </ion-label>
+              <ion-input type="number" [(ngModel)]="idade"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-label>
+            <p>Altura</p></ion-label>
+            <ion-input type="number" [(ngModel)]="altura"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-label>
+              <p>Sexo</p>
+            </ion-label>
+            <ion-select placeholder="Selecione um" [(ngModel)]="sexo">
+                <ion-select-option  value="1">Feminino</ion-select-option>
+                <ion-select-option  value="2">Masculino</ion-select-option>
+              </ion-select>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-label>
+              <p>Peso</p>
+            </ion-label>
+            <ion-input type="number" [(ngModel)]="peso"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-label>
+              <h4>Resultado: {{resultado}}</h4>
+            </ion-label>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-button color="primary" (click)="calcular()">Calcular</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-label>
+            <h5>{{mens}}</h5>
+          </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col>
+        <div>
+          <h2 id="labeltabela">Tabela de IMC</h2>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+            <ion-img src="/assets/tabela.png" id="tabela"></ion-img>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

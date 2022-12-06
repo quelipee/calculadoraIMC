@@ -1,0 +1,18 @@
+ion-content{
+    --ion-background-color:rgb(203, 218, 230);
+    margin: 0px;
+}
+
+ion-title{
+    --ion-background-color:rgb(216, 213, 213);
+    text-align: center;
+}
+
+ion-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50%;
+    width: 250px;
+    height: 250px;
+}
